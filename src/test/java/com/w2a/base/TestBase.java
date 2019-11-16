@@ -9,10 +9,10 @@ import java.util.Properties;
 
 public class TestBase {
 
-    public static WebDriver driver;
-    public static Properties config = new Properties();
-    public static Properties OR = new Properties();
-    public static FileInputStream fis;
+    private static WebDriver driver;
+    private static Properties config = new Properties();
+    private static Properties OR = new Properties();
+    private static FileInputStream fis;
 
     @BeforeSuite
     public void setUp(){
