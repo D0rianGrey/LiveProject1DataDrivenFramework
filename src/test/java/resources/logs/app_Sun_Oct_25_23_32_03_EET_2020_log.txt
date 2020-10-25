@@ -1,0 +1,8 @@
+DEBUG   2020-10-25 23:32:03,448 [main] devpinoyLogger  - Test
+DEBUG   2020-10-25 23:32:03,451 [main] devpinoyLogger  - Config file is loaded !!!
+DEBUG   2020-10-25 23:32:03,452 [main] devpinoyLogger  - OR file is loaded !!!
+DEBUG   2020-10-25 23:32:12,470 [main] devpinoyLogger  - Firefox Launched !!!
+DEBUG   2020-10-25 23:32:15,165 [main] devpinoyLogger  - Navigate to : http://www.way2automation.com/angularjs-protractor/banking/#/login
+DEBUG   2020-10-25 23:32:15,669 [main] devpinoyLogger  - Inside of Login Test
+DEBUG   2020-10-25 23:32:16,089 [main] devpinoyLogger  - Login successfully executed !!!
+DEBUG   2020-10-25 23:32:16,982 [main] devpinoyLogger  - Test execution is completed !!!

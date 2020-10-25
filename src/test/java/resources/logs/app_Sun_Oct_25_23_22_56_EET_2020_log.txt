@@ -1,0 +1,3 @@
+DEBUG   2020-10-25 23:22:56,575 [main] devpinoyLogger  - Test
+DEBUG   2020-10-25 23:22:56,584 [main] devpinoyLogger  - Config file is loaded !!!
+DEBUG   2020-10-25 23:22:56,586 [main] devpinoyLogger  - OR file is loaded !!!

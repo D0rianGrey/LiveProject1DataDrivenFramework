@@ -58,14 +58,26 @@ public class TestBase {
             }
 
             if (config.getProperty("browser").equals("firefox")) {
-                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\java\\resources\\executables\\geckodriver.exe");
-                driver = new FirefoxDriver();
-                log.debug("Firefox Launched !!!");
+                if (config.getProperty("operationSystem").equals("windows")) {
+                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\java\\resources\\executables\\geckodriver.exe");
+                    driver = new FirefoxDriver();
+                    log.debug("Firefox Launched !!!");
+                } else if (config.getProperty("operationSystem").equals("mac")) {
+                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/java/resources/executables/geckodriver");
+                    driver = new FirefoxDriver();
+                    log.debug("Firefox Launched !!!");
+                }
 
             } else if (config.getProperty("browser").equals("chrome")) {
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\java\\resources\\executables\\chromedriver.exe");
-                driver = new ChromeDriver();
-                log.debug("Chrome Launched !!!");
+                if (config.getProperty("operationSystem").equals("windows")) {
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\java\\resources\\executables\\chromedriver.exe");
+                    driver = new ChromeDriver();
+                    log.debug("Chrome Launched !!!");
+                } else if (config.getProperty("operationSystem").equals("mac")) {
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/resources/executables/chromedriver");
+                    driver = new ChromeDriver();
+                    log.debug("Chrome Launched !!!");
+                }
             }
 
             driver.get(config.getProperty("testsiteurl"));
